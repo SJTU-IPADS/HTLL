@@ -1,0 +1,1672 @@
+[
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMUTEXUTATIMEOUT",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=mutexutatimeout",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/mutexutatimeout_original/mutexutatimeout_original.o",
+            "mutexutatimeout.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "mutexutatimeout.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTAMUTEXUTATIMEOUT",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=utamutexutatimeout",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/utamutexutatimeout_original/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DSPINLOCK",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=spinlock",
+            "-DWAITING_PARK",
+            "-o",
+            "../obj/spinlock_park/spinlock_park.o",
+            "spinlock.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "spinlock.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMCS",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=mcs",
+            "-DWAITING_SPINLOCK",
+            "-o",
+            "../obj/mcs_spinlock/mcs_spinlock.o",
+            "mcs.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "mcs.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUXACTIVE",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=uxactive",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/uxactive_original/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUXPICK",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=uxpick",
+            "-DWAITING_SPINLOCK",
+            "-o",
+            "../obj/uxpick_spinlock/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMCS",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=mcs",
+            "-DWAITING_SPIN_THEN_PARK",
+            "-o",
+            "../obj/mcs_spin_then_park/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTASCL",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=utascl",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/utascl_original/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTABLOCKING",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=utablocking",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/utablocking_original/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-pthread",
+            "-O3",
+            "-Iinclude/",
+            "-DLIBUTA_INTERFACE",
+            "-g",
+            "-o",
+            "bin/uta_check",
+            "bench/check.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl",
+        "file": "bench/check.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-pthread",
+            "-O3",
+            "-Iinclude/",
+            "-DLIBASLBLOCK_INTERFACE",
+            "-g",
+            "-o",
+            "bin/asl_bench_block",
+            "bench/bench_block.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl",
+        "file": "bench/bench_block.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMALTHUSIAN",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=malthusian",
+            "-DWAITING_SPINLOCK",
+            "-o",
+            "../obj/malthusian_spinlock/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUXSHFL",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=uxshfl",
+            "-DWAITING_SPINLOCK",
+            "-o",
+            "../obj/uxshfl_spinlock/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTA",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=uta",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/uta_original/uta_original.o",
+            "uta.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "uta.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DCST",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=cst",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/cst_original/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DCSPICK",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=cspick",
+            "-DWAITING_SPINLOCK",
+            "-o",
+            "../obj/cspick_spinlock/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTASCL",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=utascl",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/utascl_original/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMCSWAKE",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=mcswake",
+            "-DWAITING_SPIN_THEN_PARK",
+            "-o",
+            "../obj/mcswake_spin_then_park/mcswake_spin_then_park.o",
+            "mcswake.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "mcswake.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DRWTAS",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=rwtas",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/rwtas_original/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTA",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=uta",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/uta_original/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTAFTS",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=utafts",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/utafts_original/utafts_original.o",
+            "utafts.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utafts.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTAMUTEXUTATIMEOUTV1",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=utamutexutatimeoutv1",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/utamutexutatimeoutv1_original/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-pthread",
+            "-O3",
+            "-Iinclude/",
+            "-DLIBUTA_INTERFACE",
+            "-g",
+            "-o",
+            "bin/uta_bench",
+            "bench/bench.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl",
+        "file": "bench/bench.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUXPICK",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=uxpick",
+            "-DWAITING_SPINLOCK",
+            "-o",
+            "../obj/uxpick_spinlock/uxpick_spinlock.o",
+            "uxpick.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "uxpick.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DPTHREADINTERPOSE",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=pthreadinterpose",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/pthreadinterpose_original/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DSPINLOCK",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=spinlock",
+            "-DWAITING_PARK",
+            "-o",
+            "../obj/spinlock_park/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMCSWAKE",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=mcswake",
+            "-DWAITING_SPIN_THEN_PARK",
+            "-o",
+            "../obj/mcswake_spin_then_park/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-pthread",
+            "-O3",
+            "-Iinclude/",
+            "-DLIBUXACTIVE_INTERFACE",
+            "-g",
+            "-o",
+            "bin/uxactive_bench",
+            "bench/bench.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl",
+        "file": "bench/bench.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-pthread",
+            "-O3",
+            "-Iinclude/",
+            "-DLIBUTA_INTERFACE",
+            "-g",
+            "-o",
+            "bin/nest_bench_uta",
+            "bench/nest_bench.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl",
+        "file": "bench/nest_bench.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUXACTIVE",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=uxactive",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/uxactive_original/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DCST",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=cst",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/cst_original/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-pthread",
+            "-O3",
+            "-Iinclude/",
+            "-g",
+            "-o",
+            "bin/bench_block",
+            "bench/bench_block.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl",
+        "file": "bench/bench_block.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DASLBLOCK",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=aslblock",
+            "-DWAITING_SPIN_THEN_PARK",
+            "-o",
+            "../obj/aslblock_spin_then_park/aslblock_spin_then_park.o",
+            "aslblock.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "aslblock.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMALTHUSIAN",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=malthusian",
+            "-DWAITING_SPINLOCK",
+            "-o",
+            "../obj/malthusian_spinlock/malthusian_spinlock.o",
+            "malthusian.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "malthusian.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-pthread",
+            "-O3",
+            "-Iinclude/",
+            "-pthread",
+            "-g",
+            "-o",
+            "bin/cst_bench_block",
+            "bench/bench_block.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl",
+        "file": "bench/bench_block.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUXACTIVE",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=uxactive",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/uxactive_original/uxactive_original.o",
+            "uxactive.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "uxactive.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTAMUTEXUTATIMEOUT",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=utamutexutatimeout",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/utamutexutatimeout_original/utamutexutatimeout_original.o",
+            "utamutexutatimeout.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utamutexutatimeout.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-pthread",
+            "-O3",
+            "-Iinclude/",
+            "-g",
+            "-o",
+            "bin/nest_bench",
+            "bench/nest_bench.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl",
+        "file": "bench/nest_bench.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMCSSTEAL",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=mcssteal",
+            "-DWAITING_SPIN_THEN_PARK",
+            "-o",
+            "../obj/mcssteal_spin_then_park/mcssteal_spin_then_park.o",
+            "mcssteal.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "mcssteal.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTASCL",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=utascl",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/utascl_original/utascl_original.o",
+            "utascl.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utascl.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMCSSTEAL",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=mcssteal",
+            "-DWAITING_SPIN_THEN_PARK",
+            "-o",
+            "../obj/mcssteal_spin_then_park/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMALTHUSIAN",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=malthusian",
+            "-DWAITING_SPIN_THEN_PARK",
+            "-o",
+            "../obj/malthusian_spin_then_park/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-pthread",
+            "-O3",
+            "-Iinclude/",
+            "-g",
+            "-o",
+            "bin/bench",
+            "bench/bench.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl",
+        "file": "bench/bench.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DPTHREADINTERPOSE",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=pthreadinterpose",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/pthreadinterpose_original/pthreadinterpose_original.o",
+            "pthreadinterpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "pthreadinterpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUXSHFL",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=uxshfl",
+            "-DWAITING_SPINLOCK",
+            "-o",
+            "../obj/uxshfl_spinlock/uxshfl_spinlock.o",
+            "uxshfl.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "uxshfl.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMALTHUSIAN",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=malthusian",
+            "-DWAITING_SPIN_THEN_PARK",
+            "-o",
+            "../obj/malthusian_spin_then_park/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DPTHREADINTERPOSE",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=pthreadinterpose",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/pthreadinterpose_original/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUXPICK",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=uxpick",
+            "-DWAITING_SPINLOCK",
+            "-o",
+            "../obj/uxpick_spinlock/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DCSUPPERBOUND",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=csupperbound",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/csupperbound_original/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DSPINLOCK",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=spinlock",
+            "-DWAITING_SPIN_THEN_PARK",
+            "-o",
+            "../obj/spinlock_spin_then_park/spinlock_spin_then_park.o",
+            "spinlock.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "spinlock.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DCSUPPERBOUND",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=csupperbound",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/csupperbound_original/csupperbound_original.o",
+            "csupperbound.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "csupperbound.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DCSPICK",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=cspick",
+            "-DWAITING_SPINLOCK",
+            "-o",
+            "../obj/cspick_spinlock/cspick_spinlock.o",
+            "cspick.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "cspick.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTA",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=uta",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/uta_original/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMCSWAKE",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=mcswake",
+            "-DWAITING_SPIN_THEN_PARK",
+            "-o",
+            "../obj/mcswake_spin_then_park/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DSPINLOCK",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=spinlock",
+            "-DWAITING_SPINLOCK",
+            "-o",
+            "../obj/spinlock_spinlock/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMUTEXUTATIMEOUT",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=mutexutatimeout",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/mutexutatimeout_original/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DASLBLOCK",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=aslblock",
+            "-DWAITING_SPIN_THEN_PARK",
+            "-o",
+            "../obj/aslblock_spin_then_park/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DSPINLOCK",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=spinlock",
+            "-DWAITING_SPINLOCK",
+            "-o",
+            "../obj/spinlock_spinlock/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DCST",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=cst",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/cst_original/cst_original.o",
+            "cst.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "cst.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMALTHUSIAN",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=malthusian",
+            "-DWAITING_SPINLOCK",
+            "-o",
+            "../obj/malthusian_spinlock/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DRWTAS",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=rwtas",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/rwtas_original/rwtas_original.o",
+            "rwtas.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "rwtas.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTABLOCKING",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=utablocking",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/utablocking_original/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTASPC",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=utaspc",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/utaspc_original/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DRWTAS",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=rwtas",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/rwtas_original/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DASLBLOCK",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=aslblock",
+            "-DWAITING_SPIN_THEN_PARK",
+            "-o",
+            "../obj/aslblock_spin_then_park/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-pthread",
+            "-O3",
+            "-Iinclude/",
+            "-g",
+            "-o",
+            "bin/rwbench",
+            "bench/rwbench.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl",
+        "file": "bench/rwbench.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DSPINLOCK",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=spinlock",
+            "-DWAITING_SPIN_THEN_PARK",
+            "-o",
+            "../obj/spinlock_spin_then_park/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMUTEXUTATIMEOUT",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=mutexutatimeout",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/mutexutatimeout_original/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTAFTS",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=utafts",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/utafts_original/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMCS",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=mcs",
+            "-DWAITING_SPIN_THEN_PARK",
+            "-o",
+            "../obj/mcs_spin_then_park/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMCS",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=mcs",
+            "-DWAITING_SPINLOCK",
+            "-o",
+            "../obj/mcs_spinlock/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUXSHFL",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=uxshfl",
+            "-DWAITING_SPINLOCK",
+            "-o",
+            "../obj/uxshfl_spinlock/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMCS",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=mcs",
+            "-DWAITING_SPIN_THEN_PARK",
+            "-o",
+            "../obj/mcs_spin_then_park/mcs_spin_then_park.o",
+            "mcs.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "mcs.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMCSSTEAL",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=mcssteal",
+            "-DWAITING_SPIN_THEN_PARK",
+            "-o",
+            "../obj/mcssteal_spin_then_park/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTAMUTEXUTATIMEOUTV1",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=utamutexutatimeoutv1",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/utamutexutatimeoutv1_original/utamutexutatimeoutv1_original.o",
+            "utamutexutatimeoutv1.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utamutexutatimeoutv1.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTAFTS",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=utafts",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/utafts_original/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-pthread",
+            "-O3",
+            "-Iinclude/",
+            "-DLIBUTA_INTERFACE",
+            "-DLIBUTASCL_INTERFACE",
+            "-g",
+            "-o",
+            "bin/utaspc_bench",
+            "bench/bench.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl",
+        "file": "bench/bench.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTASPC",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=utaspc",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/utaspc_original/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTASPC",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=utaspc",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/utaspc_original/utaspc_original.o",
+            "utaspc.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utaspc.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DCSUPPERBOUND",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=csupperbound",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/csupperbound_original/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DSPINLOCK",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=spinlock",
+            "-DWAITING_SPINLOCK",
+            "-o",
+            "../obj/spinlock_spinlock/spinlock_spinlock.o",
+            "spinlock.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "spinlock.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTABLOCKING",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=utablocking",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/utablocking_original/utablocking_original.o",
+            "utablocking.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utablocking.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DSPINLOCK",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=spinlock",
+            "-DWAITING_PARK",
+            "-o",
+            "../obj/spinlock_park/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTAMUTEXUTATIMEOUT",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=utamutexutatimeout",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/utamutexutatimeout_original/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DSPINLOCK",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=spinlock",
+            "-DWAITING_SPIN_THEN_PARK",
+            "-o",
+            "../obj/spinlock_spin_then_park/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DCSPICK",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=cspick",
+            "-DWAITING_SPINLOCK",
+            "-o",
+            "../obj/cspick_spinlock/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMCS",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=mcs",
+            "-DWAITING_SPINLOCK",
+            "-o",
+            "../obj/mcs_spinlock/utils.o",
+            "utils.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "utils.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DMALTHUSIAN",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=malthusian",
+            "-DWAITING_SPIN_THEN_PARK",
+            "-o",
+            "../obj/malthusian_spin_then_park/malthusian_spin_then_park.o",
+            "malthusian.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "malthusian.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I../include/",
+            "-fPIC",
+            "-O3",
+            "-g",
+            "-DUTAMUTEXUTATIMEOUTV1",
+            "-DCOND_VAR=0",
+            "-DFCT_LINK_SUFFIX=utamutexutatimeoutv1",
+            "-DWAITING_ORIGINAL",
+            "-o",
+            "../obj/utamutexutatimeoutv1_original/interpose.o",
+            "interpose.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl/src",
+        "file": "interpose.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-pthread",
+            "-O3",
+            "-Iinclude/",
+            "-g",
+            "-o",
+            "bin/check",
+            "bench/check.c"
+        ],
+        "directory": "/home/yzq/uxlock/litl",
+        "file": "bench/check.c"
+    }
+]
